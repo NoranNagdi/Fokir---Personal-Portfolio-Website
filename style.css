@@ -1,0 +1,687 @@
+/* ----------------------------------------General Styling------------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.clr {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(69, 66, 66);
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+html {
+    scroll-behavior:smooth;
+}
+
+/* ----------------------------------------------Home-------------------------------------------------*/
+.home {
+    min-height: 100%;
+    background-image: url("Imgs/slider-02.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-color
+{
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.759);
+}
+
+.nav-bar {
+    padding: 10px 100px;
+    position: sticky;
+    top: 20px;
+    z-index: 99;
+}
+.logo a{
+    float: left;
+    color: rgb(255, 48, 91);
+    font-size: 28px;
+    font-weight: 600;
+}
+.nav-bar ul {
+    float: right;
+}
+
+.nav-bar li {
+    float: left;
+    font-size: 16px;
+}
+
+.nav-bar li a{
+    margin: 10px;
+    font-weight: 300;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-bar li a:hover {
+    color: rgb(255, 48, 91);
+}
+
+.content {
+    margin-top: 200px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 0.7;
+}
+
+.content h1 {
+    color: rgb(255, 48, 91);
+    font-size: 58px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+ 
+.animation{
+    color: white;
+    border-right: 2px solid white;
+    width: 10ch;
+    animation:blink 0.5s infinite;
+}
+
+/* -------------------------------------------------About--------------------------------------------*/
+
+.about {
+    min-height: 80%;
+    margin-top: 80px;
+}
+.about-img {
+    width: 360px;
+    border: 8px solid rgb(79, 74, 74);
+    border-radius: 5px;
+    position: relative;
+    left: 150px;
+    float: left;
+    /* overflow: hidden; */
+}
+
+.about img {
+    position: relative;
+    height: 440px;
+    left: 20px;
+    top:20px;
+}
+
+.layer {
+    position: absolute;
+    left: 20px;
+    top: 370px;
+    width: 100%;
+    height: 0%;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+    text-align: center;
+}
+
+.about-img:hover .layer {
+    top: 20;
+    height: 100%;
+    background-color: rgba(27, 27, 27, 0.575);
+}
+
+.about-img i{
+    margin-top: 50%;
+    margin-right: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.about-img i:hover{
+    color:rgb(255, 48, 91);
+}
+
+.about-content {
+    float: left;
+    max-width: 45%;
+    margin-left: 250px;
+    line-height: 1.5;
+}
+
+.about-content h2{
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+h2::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 48, 91);
+    width: 4px;
+    height: 25px;
+    margin-top: 13px;
+    left: -15px;
+}
+
+hr{
+    border-top: 1px dashed gray;
+    margin-top: 30px;
+}
+
+.about ul {
+    float: left;
+    margin-right: 100px;
+    color: rgb(69, 66, 66);
+}
+br{
+    line-height: 1;
+}
+span{
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgb(18, 17, 17);
+}
+
+.btn {
+    padding: 15px 30px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 48, 91);
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+.btn a{
+    color: white;
+}
+
+.btn:hover{
+    background-color: rgb(219, 42, 77);
+}
+
+/* ---------------------------------------------------Services--------------------------------------------------*/
+.services{
+    background-color: #f1f1f1;
+    min-height: 80%;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+.limited-borders{
+    width: 300px;
+    margin: auto;
+}
+.services h2{
+    font-size: 40px;
+    line-height: 2;
+    padding-top: 70px;
+    position: relative;
+    border-bottom: 1px solid rgb(255, 48, 91);
+}
+.services h2::before,
+.services h2::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 48, 91);
+    width: 100px;
+    height: 1px;
+    left: 95px;
+} 
+.services h2::before{
+    bottom: 5px;
+}
+.services h2::after{
+    bottom: -7px;
+}
+
+.service-item {
+    float: left;
+    width: 25%;
+}
+
+.service-inner-item {
+    margin:2.5px;
+    padding: 50px 0;
+    line-height: 2;
+    font-weight: 400;  
+    color: #555555;
+    transition: 0.3s ease-in-out;
+}
+
+.services p{
+    font-weight: 1;
+}
+
+.services i {
+    font-size: 40px;
+    color: rgb(255, 48, 91);
+}
+
+.service-inner-item:hover{
+    background-color: white;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------------------------------------------Portfolio----------------------------------------------*/
+.portfolio{
+    min-height: 100%;
+    margin-top: 100px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+.portfolio h2 {
+    font-size: 40px;
+    line-height: 2;
+    padding-top: 70px;
+    position: relative;
+    border-bottom: 1px solid rgb(255, 48, 91);
+    margin-bottom: 50px;
+}
+
+.portfolio h2::before,
+.portfolio h2::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 48, 91);
+    width: 100px;
+    height: 1px;
+    left: 95px;
+}
+
+.portfolio h2::before {
+    bottom: 5px;
+}
+
+.portfolio h2::after {
+    bottom: -7px;
+}
+
+.portfolio-cards{
+    margin-bottom: 70px;
+}
+
+.portfolio-cards a{
+    margin: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.portfolio-cards a:hover{
+    color: rgb(255, 48, 91);
+
+}
+
+.portfolio table{
+    width: 90%;
+    margin: auto;
+}
+.portfolio table td{
+    padding: 10px;
+    position: relative;
+}
+.cell-layer{
+    margin: 10px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 94%;
+    transition:0.3s ease-in-out;
+}
+
+.portfolio table td:hover .cell-layer{
+    background-color: rgba(0, 0, 0, 0.493);
+}
+/* ---------------------------------------------Statistics--------------------------------------------*/
+.smaller-container{
+    width: 80%;
+    margin: auto;
+}
+.statistics{
+    margin-top: 80px;
+    min-height: 45%;
+    background-color: #f1f1f1;
+}
+.statistics-item{
+    float: left;
+    width: 25%;
+}
+
+.statistics-inner-item {
+    text-align: center;
+    padding-top: 90px;
+    line-height: 0.5;
+    font-weight: 500; 
+}
+
+.statistics i {
+    font-size: 30px;
+    color: rgb(255, 48, 91);
+}
+.statistics p {
+    color: #555555;
+}
+
+/* ------------------------------------------Testimonial---------------------------------------*/
+.testimonial{
+    min-height: 65%;
+    margin-top: 30px;
+}
+.testimonial .limited-borders {
+    width: 400px;
+    margin: auto;
+}
+.testimonial h2 {
+    font-size: 40px;
+    line-height: 2;
+    padding-top: 70px;
+    position: relative;
+    border-bottom: 1px solid rgb(255, 48, 91);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.testimonial h2::before,
+.testimonial h2::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 48, 91);
+    width: 140px;
+    height: 1px;
+    left: 130px;
+}
+
+.testimonial h2::before {
+    bottom: 5px;
+}
+
+.testimonial h2::after {
+    bottom: -7px;
+}
+
+.feedback-card{
+    width: 60%;
+    height: 40%;
+    margin: auto;
+    background-color: #f1f1f1;
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.056);
+    border-radius: 5px;
+    position: relative;
+}
+.feedback-card .triangle {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    background: rgb(255, 48, 91);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    float: left;
+    position: relative;
+}
+.feedback-img{
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    z-index: 2;
+}
+.feedback-img img{
+    border-radius: 50%;
+    width: 100%;
+}
+.feedback-text{
+    padding-top: 20px;
+    line-height: 2;
+    float: left;
+    max-width: 450px;
+    font-family: Roboto, sans-serif;
+    color: #555555;
+}
+.feedback-text h3{
+    font-size: 26px;
+    font-family: 'Source Sans Pro',sans-serif;
+    margin: 0 0 10px;
+    font-weight: 600;
+    color: #333;
+}
+.fas,
+.far{
+    color: rgb(241, 195, 13);
+}
+/* ----------------------------------------Blog---------------------------------------*/
+.blog {
+    background-color: #f1f1f1;
+    margin-top: 150px;
+    min-height: 110%;
+    font-family: Roboto, sans-serif;
+}
+
+.blog .limited-borders {
+    width: 200px;
+    margin: auto;
+}
+
+.blog h2 {
+    font-size: 40px;
+    line-height: 2;
+    padding-top: 70px;
+    position: relative;
+    border-bottom: 1px solid rgb(255, 48, 91);
+    text-align: center;
+}
+
+.blog h2::before,
+.blog h2::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 48, 91);
+    width: 80px;
+    height: 1px;
+    left: 60px;
+}
+
+.blog h2::before {
+    bottom: 5px;
+}
+
+.blog h2::after {
+    bottom: -7px;
+}
+
+.blog-item {
+    float: left;
+    width: 33.3333%;
+}
+
+.blog-inner-item {
+    margin: 5%;
+    min-height: 450px;
+    font-weight: 400;
+    background-color: white;
+}
+.blog-inner-item p,
+.blog-inner-item h3{
+    padding-left: 20px;
+}
+
+.blog-inner-item p{
+    color: #555555; 
+    line-height: 1.5;
+}
+.blog-inner-item h3 {
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.blog-inner-item a{
+   transition: 0.3s ease;
+}
+
+.blog-inner-item a:hover {
+    color:rgb(255, 48, 91);
+}
+.frame {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.frame iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* ----------------------------------------Contact---------------------------------------*/
+.contact {
+    min-height: 90%;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+}
+.contact .limited-borders {
+    width: 300px;
+    margin: auto;
+}
+
+.contact h2 {
+    font-size: 40px;
+    line-height: 2;
+    padding-top: 70px;
+    position: relative;
+    border-bottom: 1px solid rgb(255, 48, 91);
+    margin-bottom: 50px;
+}
+
+.contact h2::before,
+.contact h2::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 48, 91);
+    width: 100px;
+    height: 1px;
+    left: 95px;
+}
+
+.contact h2::before {
+    bottom: 5px;
+}
+
+.contact h2::after {
+    bottom: -7px;
+}
+
+.contact-form
+{
+    width: 80%;
+    margin: auto;
+    border: none;
+    outline: none;
+}
+input,
+textarea{
+    border: 2px solid rgba(194, 190, 190, 0.59);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 1;
+    line-height: 2;
+    width: 350px;
+    height: 40px;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 0.3 ease-in-out;
+}
+input:focus,
+textarea:focus {
+    box-shadow: 0 5px 10px #a944427f;
+    border: 2px solid #b04d4cd6;   
+    outline: none;
+}
+
+.contact-form .subject {
+    width: 740px;
+    height: 40px;
+}
+
+.contact-form textarea{
+    width: 740px;
+    height: 100px;
+    margin-top: 20px;
+    resize: both;
+    overflow: hidden;
+}
+.contact-form button{
+    display: block;
+    width: 150px;
+    height: 40px;
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-left: 180px;
+    background-color: rgb(255, 48, 91);
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+.send-msg a{
+    color: white;
+    font-weight: 540;
+    line-height: 2;
+}
+
+.send-msg:hover {
+    background-color: rgb(219, 42, 77);
+}
+
+/* ----------------------------------------Footer---------------------------------------*/
+.footer{
+    max-width: 100%;
+    height: 20%;
+    background-color: #333333;
+}
+.last-container{
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+.last-container a{
+    color: rgb(255, 48, 91);
+}
+.last-container i {
+    margin-right: 15px;
+    transition: 0.3s;
+    color: white;
+}
+
+.last-container i:hover{
+    color: rgb(255, 48, 91);
+}
+.last-container a:hover {
+    text-decoration: underline;
+}
+  
+
+
+
+
