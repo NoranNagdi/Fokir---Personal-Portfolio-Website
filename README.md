@@ -6,7 +6,7 @@ Fokir is a modern personal portfolio website designed for showcasing the skills 
 
 ## 🌐 Live Demo
 
-🔗 [View Live]()
+🔗 [View Live](https://norannagdi.github.io/Fokir---Personal-Portfolio-Website/)
 
 ---
 
